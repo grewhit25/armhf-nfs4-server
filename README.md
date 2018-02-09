@@ -54,7 +54,7 @@ nfs4:
 
 You will need to provide the container with the volume(s) that you want to expose via nfs
 
--v <local path>:<path in container>
+-v /local-path:/path-in-container
 
 ## environment variables
 To use the environmental variable method, you will need to provide at the following 3 environment variables to configure the nfs exports:
