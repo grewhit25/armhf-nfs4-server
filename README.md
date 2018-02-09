@@ -10,7 +10,7 @@ The auto load has been inspired by Fuzzle: https://github.com/f-u-z-z-l-e/docker
 See [example directory](https://github.com/grewhit25/docker-nfs4/tree/master/example) for sample config file.
 
 ## Quickstart
-
+```
 docker run -d --cap-add=SYS_ADMIN \
   --name="nfs4" \
   --net=host \
@@ -20,19 +20,18 @@ docker run -d --cap-add=SYS_ADMIN \
   -e NFS_EXPORT_OPTIONS_1="rw,fsid=0,root_squash,no_subtree_check,insecure" \
   -p 111:111 -p 111:111/udp \
   -p 2049:2049 -p 2049:2049/udp \
-  restart:always
+  restart:always \
   grewhit/armhf-nfs4-server
-
-docker-compose.yml
-
+```
+### docker-compose.yml
+```
 nfs4:
   image: grewhit/armhf-nfs4-server
-
-  # Required to load kernel NFS module
-  cap_add:
+  
+    cap_add:
     - SYS_ADMIN
 
-  volumes:
+  volumes: \
     # You can provide an exports config file or alternatively via environmental variables.
     - ./exports:/etc/exports
 
@@ -40,24 +39,24 @@ nfs4:
     - /mnt:/mnt
 
     # Alternative config method
-  environment:
+  environment: \
     - NFS_EXPORT_DIR_1=/mnt \
     - NFS_EXPORT_DOMAIN_1=\* \
     - NFS_EXPORT_OPTIONS_1="rw,fsid=0,root_squash,no_subtree_check,insecure"
 
-  ports:
+  ports: \
     - "111:111/tcp"
     - "111:111/udp"
     - "2049:2049/tcp"
     - "2049:2049/udp"
-
-volumes
+```
+## volumes
 
 You will need to provide the container with the volume(s) that you want to expose via nfs
 
 -v <local path>:<path in container>
 
-environment variables
+## environment variables
 To use the environmental variable method, you will need to provide at the following 3 environment variables to configure the nfs exports:
 
 NFS_EXPORT_DIR_1
