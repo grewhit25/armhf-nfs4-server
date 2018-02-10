@@ -59,7 +59,7 @@ nfs4:
     cap_add:
     - SYS_ADMIN
 
-  volumes: \
+  volumes:
     # You can provide an exports config file or alternatively via environmental variables.
     - ./exports:/etc/exports
 
@@ -72,7 +72,7 @@ nfs4:
     - NFS_EXPORT_DOMAIN_1=\*
     - NFS_EXPORT_OPTIONS_1="rw,fsid=0,root_squash,no_subtree_check,insecure"
 
-  ports: \
+  ports:
     - "111:111/tcp"
     - "111:111/udp"
     - "2049:2049/tcp"
