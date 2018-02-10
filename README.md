@@ -6,7 +6,7 @@ The auto load has been inspired by Fuzzle: <https://github.com/f-u-z-z-l-e/docke
 
 [NFS v4](http://nfs.sourceforge.net/) server running under [s6 overlay](https://github.com/just-containers/s6-overlay) on [Alpine Linux](https://hub.docker.com/_/alpine/).
 
-## Note':'
+## Note
 
 ```text
 
@@ -22,7 +22,8 @@ It is recommend to try mounting an NFS volume to eliminate any configuration iss
 e.g.
 sudo mount -v -o vers=4,loud <nfs-server>:/ ~/mnt
 
-Things are different with NFSv4. The client must request a path relative to a virtual root directory on the server. The exports entry with fsid=0 is the root directory.
+Things are different with NFSv4. The client must request a path relative to a virtual root directory on the server.
+The exports entry with fsid=0 is the root directory.
 
 ```
 
