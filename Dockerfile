@@ -2,7 +2,8 @@ FROM arm32v6/alpine:latest
 
 LABEL MAINTAINER="Greg White grewhit25@gmail.com"
 
-RUN apk -U add --no-cache bash nfs-utils
+RUN apk --update upgrade && \
+    apk add bash nfs-utils
 
 ADD https://github.com/just-containers/s6-overlay/releases/download/v1.21.2.1/s6-overlay-armhf.tar.gz /tmp/
 RUN tar xzf /tmp/s6-overlay-armhf.tar.gz -C / && \
