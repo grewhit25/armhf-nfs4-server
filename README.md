@@ -3,9 +3,9 @@
 [![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)]()
 [![Docker Build Status](https://img.shields.io/docker/build/jrottenberg/ffmpeg.svg)]()
 
-This is a fork form: [Joe Bieillik nfs4 repo] (<https://github.com/jcbiellikltd/docker-nfs4>)
+This is a fork form: [Joe Bieillik nfs4 repo](https://github.com/jcbiellikltd/docker-nfs4)
 Modified to run on a Raspberry Pi and to auto load the exports configuration.
-The auto load has been inspired by [Fuzzle] (<https://github.com/f-u-z-z-l-e/docker-nfs-server>)
+The auto load has been inspired by [Fuzzle](https://github.com/f-u-z-z-l-e/docker-nfs-server)
 
 [NFS v4](http://nfs.sourceforge.net/) server running under [s6 overlay](https://github.com/just-containers/s6-overlay) on [Alpine Linux](https://hub.docker.com/_/alpine/).
 
