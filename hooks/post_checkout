@@ -6,5 +6,4 @@
 #
 # So using apt-get to install qemu-user-static
 
-sudo mount binfmt_misc -t binfmt_misc /proc/sys/fs/binfmt_misc/
-apt-get update && apt-get -y install qemu-user-static
+apt-get update && apt-get -y install qemu-arm-static
