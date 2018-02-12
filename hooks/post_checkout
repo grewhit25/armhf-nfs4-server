@@ -1,0 +1,10 @@
+#!/bin/bash
+# https://github.com/docker/hub-feedback/issues/1261
+# Q. Currently it is not possible to launch an automated arm build on the Hub because the hosts does not seem to have qemu-user-static
+# A. You could install the package in the post_checkout hook: https://docs.docker.com/docker-cloud/builds/advanced/
+# It is also supported in Docker Hub.
+# You could use it to install apt-get packages (our build machines are Ubuntu Trusty).
+#
+# So using apt-get to install qemu-user-static
+
+apt-get update && apt-get inatall qemu-user-static
