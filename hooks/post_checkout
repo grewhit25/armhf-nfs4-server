@@ -7,4 +7,4 @@
 #
 # So using apt-get to install qemu-user-static
 
-apt-get update && apt-get inatall qemu-user-static
+apt-get update && apt-get install qemu-user-static
