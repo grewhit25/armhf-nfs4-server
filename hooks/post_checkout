@@ -6,4 +6,4 @@
 #
 # So using apt-get to install qemu-user-static
 
-apt-get update && apt-get -y upgrade && apt-get -y install qemu-user-static
+apt-get -y install binfmt-support qemu-user-static
