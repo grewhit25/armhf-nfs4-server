@@ -1,7 +1,7 @@
 # NFS v4 Server Container for Raspberry Pi 2/3
 
-[![Docker Automated build](https://img.shields.io/docker/automated/grewhit/ffmpeg.svg)](https://hub.docker.com/r/grewhit/armhf-nfs4-server/)
-[![Docker Build Status](https://img.shields.io/docker/build/grewhit/ffmpeg.svg)](https://hub.docker.com/r/grewhit/armhf-nfs4-server/)
+[![Docker Automated build](https://img.shields.io/docker/automated/grewhit/armhf-nfs4-server.svg)](https://hub.docker.com/r/grewhit/armhf-nfs4-server/)
+[![Docker Build Status](https://img.shields.io/docker/build/grewhit/armhf-nfs4-server.svg)](https://hub.docker.com/r/grewhit/armhf-nfs4-server/)
 
 This is a fork form: [Joe Bieillik nfs4 repo](https://github.com/jcbiellikltd/docker-nfs4)
 Modified to run on a Raspberry Pi and to auto load the exports configuration.
