@@ -4,8 +4,6 @@
 # A. Install apt-get packages in the post_checkout hook: https://docs.docker.com/docker-cloud/builds/advanced/
 # (Docker build machines are Ubuntu Trusty).
 #
-# So using apt-get to install qemu-user-static
-
-# apt update && apt -y install qemu qemu-user-static qemu-user binfmt-support
+# So using resin and multiarch/qemu-user-static
 
 docker run --rm --privileged multiarch/qemu-user-static:register --reset
