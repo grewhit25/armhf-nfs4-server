@@ -23,8 +23,7 @@ For Arch Linux: sudo pacman -S nfs-utils
 
 It is recommend to try mounting an NFS volume to eliminate any configuration issues.
 
-e.g.
-sudo mount -v -o vers=4,loud <nfs-server>:/ ~/mnt
+e.g. sudo mount -v -o vers=4,loud <nfs-server>:/ ~/mnt
 
 Things are different with NFSv4. The client must request a path relative to a virtual root directory on the server.
 The exports entry with fsid=0 is the root directory.
