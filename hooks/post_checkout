@@ -8,4 +8,6 @@
 
 # apt-get update && apt-get -y install qemu-user-static
 
+apt-get update && apt-get -y install bash
+
 docker run --rm --privileged multiarch/qemu-user-static:register --reset
