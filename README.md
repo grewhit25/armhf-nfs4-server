@@ -1,5 +1,6 @@
 # NFS v4 Server Container for Raspberry Pi 2/3
 
+[![apm](https://img.shields.io/apm/l/vim-mode.svg?style=plastic)](https://github.com/grewhit25/armhf-nfs4-server/blob/master/LICENSE)
 [![Docker Automated build](https://img.shields.io/docker/automated/grewhit/armhf-nfs4-server.svg)](https://hub.docker.com/r/grewhit/armhf-nfs4-server/)
 [![Docker Build Status](https://img.shields.io/docker/build/grewhit/armhf-nfs4-server.svg)](https://hub.docker.com/r/grewhit/armhf-nfs4-server/)
 
