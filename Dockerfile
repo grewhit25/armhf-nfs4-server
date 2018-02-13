@@ -1,4 +1,5 @@
-FROM arm32v6/alpine:latest
+# FROM arm32v6/alpine:latest
+FROM resin/armhf-alpine
 
 LABEL MAINTAINER="Greg White grewhit25@gmail.com"
 
