@@ -2,7 +2,7 @@ FROM arm32v6/alpine:latest
 
 LABEL MAINTAINER="Greg White grewhit25@gmail.com"
 
-RUN apk update add \
+RUN apk --update add \
     nfs-utils \
 	bash
 
