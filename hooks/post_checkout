@@ -6,6 +6,6 @@
 #
 # So using apt-get to install qemu-user-static
 
-docker run --rm --privileged multiarch/qemu-user-static:register --reset
+# apt-get update && apt-get -y install qemu-user-static
 
-apt-get update && apt-get -y install qemu-user-static
+docker run --rm --privileged multiarch/qemu-user-static:register --reset
