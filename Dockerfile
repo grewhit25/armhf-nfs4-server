@@ -6,7 +6,7 @@ RUN apk --update add \
     nfs-utils \
     bash
 
-ADD https://github.com/just-containers/s6-overlay/releases/download/v1.21.2.1/s6-overlay-armhf.tar.gz /tmp/
+ADD https://github.com/just-containers/s6-overlay/releases/download/v1.21.2.2/s6-overlay-armhf.tar.gz /tmp/
 RUN tar xzf /tmp/s6-overlay-armhf.tar.gz -C / && \
     mkdir /app 
 
