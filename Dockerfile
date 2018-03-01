@@ -2,13 +2,13 @@ FROM resin/armhf-alpine
 
 LABEL MAINTAINER="Greg White grewhit25@gmail.com"
 
-ENV s6_VERSION=1.21.4.0
+ENV s6_VERSION 1.21.4.0
 
 RUN apk --update add \
     nfs-utils \
     bash
 
-ADD https://github.com/just-containers/s6-overlay/releases/download/${s6_VERSION}/s6-overlay-armhf.tar.gz /tmp/
+ADD https://github.com/just-containers/s6-overlay/releases/download/v${s6_VERSION}/s6-overlay-armhf.tar.gz /tmp/
 RUN tar xzf /tmp/s6-overlay-armhf.tar.gz -C / && \
     mkdir /app 
 
