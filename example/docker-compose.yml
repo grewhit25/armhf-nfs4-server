@@ -1,5 +1,5 @@
 nfs4:
-  image: joebiellik/nfs4
+  image: grewhit/armhf-nfs4-server
 
   # Required to load kernel NFS module
   privileged: true
